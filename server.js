@@ -34,5 +34,9 @@ mongoose
     console.log(error);
   });
 
+  app.get("/",(req,res) => {
+    res.send("Welcome to shareme server");
+  })
+
 const PORT = 8000;
 app.listen(PORT, () => console.log(`Server is runnning at port ${PORT}`));
