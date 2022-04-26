@@ -38,5 +38,5 @@ mongoose
     res.send("Welcome to shareme server");
   })
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Server is runnning at port ${PORT}`));
